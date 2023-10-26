@@ -1,0 +1,39 @@
+@use "variaveis";
+
+.hero {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 12vh;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__text {
+            max-width: 550px;
+            text-align: center;
+
+            p {
+                margin: 36px 0;
+
+            }
+
+            &__button {
+                background-color: transparent;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid variaveis.$mainTextColor;
+                text-decoration: none;
+                color: variaveis.$mainTextColor;
+
+                &:hover {
+                    background-color: variaveis.$mainTextColor;
+                    color: variaveis.$mainBgColor;
+                }
+            }
+        }
+    }
+
+}
